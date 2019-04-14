@@ -1,0 +1,37 @@
+html, body {
+    height: 100%;
+}
+
+body {
+  background-color: #e5f4f9;
+}
+
+.circle {
+  display: block;
+  position: absolute;
+  background-color: transparent;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shape {
+    fill: none;
+    stroke: pink;
+    stroke-width: 5;
+    fill-opacity: 0.1;
+    stroke-opacity: 0.9;
+}
+
+.button {
+  font-size: 15px;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.button:focus {
+  font-weight: bold;
+}

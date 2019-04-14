@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Posenet</title>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/97/three.js"></script>
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/posenet"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/tet7hit.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<embed src="music.mp3" autostart="true" loop="true" hidden="true">
+
+<div class='flex'>
+  <div id='main' style='display:none'>
+        <video id="video" playsinline style=" -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        display: none;
+        ">
+        </video>
+        <!-- <canvas id="output" /> -->
+    </div>
+  </div>
+  <div>
+    <button class="button" onclick="changeShape(event)" value="free" focus="true">Free Form</button>
+    <button class="button" onclick="changeShape(event)" value="circle">Circle</button>
+    <button class="button" onclick="changeShape(event)" value="rectangle">Rectangle</button>
+    <button class="button" onclick="changeShape(event)" value="horizontal_line">Horizontal Line</button>
+    <button class="button" onclick="changeShape(event)" value="vertical_line">Vertical Line</button>
+  </div>
+
+  <div id='circleContainer' class='flex'>
+    <svg width="800" height="800">
+      <rect x="100" y="100" width="600" height="350" class="shape"/>
+    </svg>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
